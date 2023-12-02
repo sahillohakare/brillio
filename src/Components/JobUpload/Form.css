@@ -1,0 +1,41 @@
+.Form {
+    width: 40%;
+    padding: 5%;
+    margin: 10px auto;
+    background-color: #211747;
+    color:azure;
+    border-radius:25px;
+   }
+   
+   .Form-field {
+    margin-bottom: 15px;
+   }
+   
+   .Form-field label {
+    display: block;
+    margin-bottom: 5px;
+   }
+   
+   .Form-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #f7f9f7;
+
+   }
+   
+   .Form button {
+    width:30%;
+    padding:10px;
+    background-color: #2CC84D;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+   }
+   
+   .Form button:hover {
+    background-color: #137829;
+   }
