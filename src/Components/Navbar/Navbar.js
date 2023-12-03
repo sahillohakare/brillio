@@ -11,7 +11,7 @@ class Navbar extends Component{
     return (
         <>
             <nav>
-                <img id = "im" src = "https://www.brillio.com/wp-content/uploads/2022/01/Brillio_Primary-Logo_12.2021.svg" alt = "Brillio"></img>
+                <img className="imagex" src = "https://cxotoday.com/wp-content/uploads/2022/11/Brillio-Logo.png" alt = "Brillio"></img>
                 <div>
                     <ul id = "navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
                         {/* {/* <li><a className = "active" href="index.html">About Brillio</a></li>*/}

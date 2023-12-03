@@ -8,6 +8,7 @@ import Calendar1 from './Components/Calendar/Calender.js';
 import Dashboard from './Components/HomePage/Dashboard.jsx';
 import Form from './Components/JobUpload/Form.jsx';
 import { Link } from 'react-router-dom';
+import entities from './csvjson.json'
 
 // const HomePage = () =>(
 //   <>
@@ -22,7 +23,22 @@ export default function App() {
     <div className="App">
       <Navbar/>
       <Search/>
-      <ResponsiveCard/><ResponsiveCard/><ResponsiveCard/><ResponsiveCard/><ResponsiveCard/>
+{
+ 
+  entities.map((element,index)=> {
+      var tags = element.generated_tags.split(',');
+          return( 
+            <ResponsiveCard 
+              key = {index} 
+              name = {element.Name}
+              email = {element.Email}
+              phone = {element['Mobile Number']}
+              tags = {tags}
+            />
+          )
+      })
+}
+
       <Calendar1/>
       <Dashboard/>
       {/* <Form/> */}
